@@ -254,6 +254,19 @@
                             </div>
                         </div>
                     </div>
+                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="projects/8.png" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="https://getmyhealthcare4free.com/" class="text-center">
+                                        <h4 class="text-secondary">Wordpress</h4>
+                                        <p class="m-0 text-white">Get My Healthcare4free</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".3s">
                         <div class="project-item">
                             <div class="project-img">
@@ -306,19 +319,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="projects/6.png" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="https://ubqaristores.com/" class="text-center">
-                                        <h4 class="text-secondary">Ecommerce</h4>
-                                        <p class="m-0 text-white">Ubqari Store</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
@@ -332,19 +333,8 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
-                                <img src="projects/8.png" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="https://getmyhealthcare4free.com/" class="text-center">
-                                        <h4 class="text-secondary">Wordpress</h4>
-                                        <p class="m-0 text-white">Get My Healthcare4free</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
+                   
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
@@ -371,7 +361,21 @@
                             </div>
                         </div>
                     </div>
+                  
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="projects/12.png" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="https://futurepath.netlify.app/" class="text-center">
+                                        <h4 class="text-secondary">Mern Stack</h4>
+                                        <p class="m-0 text-white">Futurepath Technologies</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
                                 <img src="projects/11.png" class="img-fluid w-100 rounded" alt="">
@@ -387,24 +391,24 @@
                     <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
                         <div class="project-item">
                             <div class="project-img">
-                                <img src="projects/12.png" class="img-fluid w-100 rounded" alt="">
-                                <div class="project-content">
-                                    <a href="https://futurepath.netlify.app/" class="text-center">
-                                        <h4 class="text-secondary">Mern Stack</h4>
-                                        <p class="m-0 text-white">Futurepath Technologies</p>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
-                        <div class="project-item">
-                            <div class="project-img">
                                 <img src="projects/13.png" class="img-fluid w-100 rounded" alt="">
                                 <div class="project-content">
                                     <a href="https://www.ervysjewel.com/" class="text-center">
                                         <h4 class="text-secondary">Shopify</h4>
                                         <p class="m-0 text-white">Evry Jewel</p>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                      <div class="col-md-6 col-lg-4 wow fadeIn" data-wow-delay=".7s">
+                        <div class="project-item">
+                            <div class="project-img">
+                                <img src="projects/6.png" class="img-fluid w-100 rounded" alt="">
+                                <div class="project-content">
+                                    <a href="https://ubqaristores.com/" class="text-center">
+                                        <h4 class="text-secondary">Ecommerce</h4>
+                                        <p class="m-0 text-white">Ubqari Store</p>
                                     </a>
                                 </div>
                             </div>
@@ -686,6 +690,38 @@
         <script src="lib/easing/easing.min.js"></script>
         <script src="lib/waypoints/waypoints.min.js"></script>
         <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const projectRow = document.querySelector('.project .row.g-5');
+                if (!projectRow) return;
+
+                const projectItems = Array.from(projectRow.children);
+                const targetNames = [
+                    'Leads Capital',
+                    'Affordable Health Insurance',
+                    'National Injury Assist For You',
+                    'Best Medicare Plans For Seniors'
+                ];
+
+                const targetItems = projectItems.filter(item =>
+                    targetNames.some(name => (item.textContent || '').includes(name))
+                );
+
+                if (!targetItems.length) return;
+
+                const remainingItems = projectItems.filter(item => !targetItems.includes(item));
+                const insertIndex = Math.max(0, Math.floor(remainingItems.length / 2));
+
+                const reorderedItems = [
+                    ...remainingItems.slice(0, insertIndex),
+                    ...targetItems,
+                    ...remainingItems.slice(insertIndex)
+                ];
+
+                reorderedItems.forEach(item => projectRow.appendChild(item));
+            });
+        </script>
 
         <!-- Template Javascript -->
         <script src="js/main.js"></script>
