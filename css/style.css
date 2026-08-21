@@ -505,6 +505,12 @@
     padding: 15px;
 }
 
+.project-img > img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .project-img::before {
     content: "";
     position: absolute;
